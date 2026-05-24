@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+
+    int toggleBit(int n, int i)
+    {
+        return n ^ (1 << i);
+    }
+};
+
+int main()
+{
+    Solution sol;
+
+    int num = 13;
+    int index = 2;
+
+    int ans = sol.toggleBit(num, index);
+
+    cout << "After toggling bit: " << ans << endl;
+
+    return 0;
+}
