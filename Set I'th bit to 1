@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+
+    int setBit(int n, int i)
+    {
+        return n | (1 << i);
+    }
+};
+
+int main()
+{
+    Solution sol;
+
+    int num = 9;
+    int index = 1;
+
+    int ans = sol.setBit(num, index);
+
+    cout << "After setting bit: " << ans << endl;
+
+    return 0;
+}
