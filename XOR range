@@ -1,0 +1,11 @@
+int func1(int N)
+{
+  if(N%4 == 1) return 1;
+  else if(N%4 == 2) return N+1;
+  else if(N%4 == 3) return 0;
+  else return N;
+}
+int func(int L,int R)
+{
+  return func1(L-1) ^ func1(R);
+}
